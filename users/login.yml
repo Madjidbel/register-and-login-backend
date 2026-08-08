@@ -1,0 +1,23 @@
+info:
+  name: login
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:5000/api/users/login
+  body:
+    type: json
+    data: |-
+      {
+        "email":"madjidll@gmail.com",
+        "password":"madjid1223"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

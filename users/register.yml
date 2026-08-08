@@ -1,0 +1,21 @@
+info:
+  name: register
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:5000/api/users
+  body:
+    type: json
+    data: |-
+      {
+        "email":"madjidll@gmail.com",
+        "password":"madjid1223"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
