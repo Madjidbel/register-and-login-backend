@@ -1,6 +1,7 @@
 info:
   name: login
   type: http
+  seq: 1
 
 http:
   method: POST
@@ -9,11 +10,10 @@ http:
     type: json
     data: |-
       {
-        "email":"madjidll@gmail.com",
-        "password":"madjid1223"
+        "email":"madjid@gmail.com",
+        "password":"123123123"
       }
-  auth:
-    type: bearer
+  auth: inherit
 
 settings:
   encodeUrl: true
