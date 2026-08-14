@@ -1,15 +1,16 @@
 info:
-  name: forgot password
+  name: register
   type: http
 
 http:
   method: POST
-  url: http://localhost:5000/api/users/forgot-password
+  url: http://localhost:5000/api/users/register
   body:
     type: json
     data: |-
       {
-        "email":"madjidma2005@gmail.com"
+        "email":"mada@gmail.com",
+        "password":"qsqsqsqs"
       }
   auth: inherit
 
@@ -18,4 +19,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-​
